@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { AppContext } from "../context/Context";
 import Location from "./Location";
 import Category from "./Category";
+import Socials from "./Socials";
 
 const Card = ({
   name,
   country_id,
-  connected_social,
+  connected_socials,
   gender,
   category,
   followers,
@@ -15,7 +16,9 @@ const Card = ({
 }) => {
   const { themeMode } = useContext(AppContext);
 
-  console.log(connected_social)
+  const socials = JSON.stringify(connected_socials)
+
+  console.log(JSON.parse(socials))
 
   return (
     <div
@@ -41,12 +44,12 @@ const Card = ({
         </h1>
 
 
-        <div style={{ display:'flex', flexDirecttion:'row', justifyContent:'center', alignItems:'center'}}>
+        <div style={{ display: 'flex', flexDirecttion: 'row', justifyContent: 'center', alignItems: 'center' }}>
           <i
             className="fa-solid fa-location-dot px-2 text-lg 
                 text-gray-font"
           ></i>
-          
+
           <Location name={country_id} />
         </div>
 
@@ -64,12 +67,10 @@ const Card = ({
           className={`flex gap-4 justify-center items-center py-4 
                 text-lg ${themeMode ? "text-btn-color" : "text-gray-font"}`}
         >
+
+          <Socials name={socials} />
+
          
-       
-          <i className="fa-brands fa-square-facebook"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-brands fa-twitter"></i>
         </div>
         <div
           className="text-xs pt-3 pb-5 flex items-center justify-center 

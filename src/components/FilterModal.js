@@ -21,12 +21,12 @@ const FilterModal = ({ handleModalClose }) => {
             : "bg-black text-gray-font"
             }`}
         >
-          <option value="Bangladesh" selected>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh" selected>
             Select Options
           </option>
-          <option value="Bangladesh">Food</option>
-          <option value="Bangladesh">Model</option>
-          <option value="Bangladesh">Fashion</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Food</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Model</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Fashion</option>
         </select>
         <p style={{ fontFamily: 'Sen', fontSize: '14px', padding: '10px 0px 10px 0px' }}>Influencer's Country</p>
         <select
@@ -40,8 +40,8 @@ const FilterModal = ({ handleModalClose }) => {
           <option value="Bangladesh" selected>
             Select Options
           </option>
-          <option value="Bangladesh">Bangladesh</option>
-          <option value="Bangladesh">India</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Bangladesh</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">India</option>
         </select>
         <p style={{ fontFamily: 'Sen', fontSize: '14px', padding: '10px 0px 10px 0px' }}>Audience's Country</p>
         <select
@@ -55,8 +55,8 @@ const FilterModal = ({ handleModalClose }) => {
           <option value="Bangladesh" selected>
             Select Options
           </option>
-          <option value="Bangladesh">Bangladesh</option>
-          <option value="Bangladesh">India</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Bangladesh</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">India</option>
         </select>
         <p style={{ fontFamily: 'Sen', fontSize: '14px', padding: '10px 0px 10px 0px' }}>
           Influencer's Social Media Platform
@@ -72,10 +72,10 @@ const FilterModal = ({ handleModalClose }) => {
           <option value="Bangladesh" selected>
             Select Options
           </option>
-          <option value="Bangladesh">Facebook</option>
-          <option value="Bangladesh">Instgram</option>
-          <option value="Bangladesh">LinkedIn</option>
-          <option value="Bangladesh">TikTok</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Facebook</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">Instgram</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">LinkedIn</option>
+          <option style={{ fontFamily: 'Sen', fontSize: '14px' }} value="Bangladesh">TikTok</option>
         </select>
 
 
@@ -94,7 +94,7 @@ const FilterModal = ({ handleModalClose }) => {
         </div>
 
 
-        <p className="py-3 font-light text-base">Influencer's Gender</p>
+        <p style={{ fontFamily: 'Sen', fontSize: '14px', padding: '30px 0px 5px 0px' }}>Influencer's Gender</p>
         <div className="w-3/5 flex items-center justify-around">
           <input
             type="radio"
@@ -103,7 +103,7 @@ const FilterModal = ({ handleModalClose }) => {
             value="Male"
             className="w-5 h-5"
           />
-          <label for="male">Male</label>
+          <label style={{ fontFamily: 'Sen', fontSize: '14px' }} for="male">Male</label>
           <input
             type="radio"
             id="female"
@@ -111,7 +111,7 @@ const FilterModal = ({ handleModalClose }) => {
             value="Female"
             className="w-5 h-5"
           />
-          <label for="female">Female</label>
+          <label style={{ fontFamily: 'Sen', fontSize: '14px' }} for="female">Female</label>
         </div>
 
         <div className="w-full flex justify-end gap-3 py-4">

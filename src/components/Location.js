@@ -19,7 +19,7 @@ function Location(props) {
             .catch(err => {
                 // console.log(err)
             })
-    })
+    }, [])
 
     const filtered = locations.filter(location => {
         return location.id === props.name;

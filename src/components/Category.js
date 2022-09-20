@@ -19,7 +19,7 @@ function Category(props) {
             .catch(err => {
                 // console.log(err)
             })
-    })
+    }, [])
 
     const filtered = categories.filter(category => {
         return category.id === props.name;
