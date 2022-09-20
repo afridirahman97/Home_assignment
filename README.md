@@ -20,4 +20,6 @@ You will also see any lint errors in the console.
 
 The Site is also deployed on Netlify 
 
+[https://hypescout-assignment.netlify.app/](https://hypescout-assignment.netlify.app/)
+
 
